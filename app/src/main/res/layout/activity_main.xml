@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/display_text_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#F5F5F5"
+        android:gravity="end|bottom"
+        android:padding="16dp"
+        android:text="@string/btn_0"
+        android:textColor="@android:color/black"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/barrier_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="1" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="flow_numbers,flow_operators" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow_numbers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="button_7,button_8,button_9,button_4,button_5,button_6,button_1,button_2,button_3,button_0,button_dot,button_clear,button_backspace"
+        app:flow_horizontalGap="4dp"
+        app:flow_maxElementsWrap="3"
+        app:flow_verticalGap="4dp"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/flow_operators"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow_operators"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:constraint_referenced_ids="button_divide,button_multiply,button_minus,button_plus,button_equals"
+        app:flow_horizontalGap="4dp"
+        app:flow_maxElementsWrap="1"
+        app:flow_verticalGap="4dp"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintBottom_toBottomOf="@+id/flow_numbers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/flow_numbers"
+        app:layout_constraintTop_toTopOf="@+id/flow_numbers" />
+
+    <!-- Number and Misc Buttons -->
+    <Button android:id="@+id/button_7" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/btn_7" tools:ignore="MissingConstraints" />
+    <Button android:id="@+id/button_8" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/btn_8" tools:ignore="MissingConstraints" />
+    <Button android:id="@+id/button_9" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/btn_9" tools:ignore="MissingConstraints" />
+
+    <Button android:id="@+id/button_4" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/btn_4" tools:ignore="MissingConstraints" />
+    <Button android:id="@+id/button_5" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/btn_5" tools:ignore="MissingConstraints" />
+    <Button android:id="@+id/button_6" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/btn_6" tools:ignore="MissingConstraints" />
+
+    <Button android:id="@+id/button_1" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/btn_1" tools:ignore="MissingConstraints" />
+    <Button android:id="@+id/button_2" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/btn_2" tools:ignore="MissingConstraints" />
+    <Button android:id="@+id/button_3" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/btn_3" tools:ignore="MissingConstraints" />
+
+    <Button android:id="@+id/button_0" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/btn_0" tools:ignore="MissingConstraints" />
+    <Button android:id="@+id/button_dot" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/btn_dot" tools:ignore="MissingConstraints" />
+    <Button android:id="@+id/button_clear" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/btn_clear" tools:ignore="MissingConstraints" />
+
+    <Button android:id="@+id/button_backspace" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/btn_backspace" tools:ignore="MissingConstraints" />
+
+    <!-- Operator Buttons (Vertical column on the right) -->
+    <Button android:id="@+id/button_divide" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="0dp" android:text="@string/btn_divide" tools:ignore="MissingConstraints" />
+    <Button android:id="@+id/button_multiply" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="0dp" android:text="@string/btn_multiply" tools:ignore="MissingConstraints" />
+    <Button android:id="@+id/button_minus" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="0dp" android:text="@string/btn_minus" tools:ignore="MissingConstraints" />
+    <Button android:id="@+id/button_plus" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="0dp" android:layout_height="0dp" android:text="@string/btn_plus" tools:ignore="MissingConstraints" />
+    <Button android:id="@+id/button_equals" android:layout_width="0dp" android:layout_height="0dp" android:backgroundTint="@color/design_default_color_primary" android:text="@string/btn_equals" android:textColor="@android:color/white" tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
