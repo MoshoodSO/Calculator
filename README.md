@@ -156,7 +156,3 @@ This repository is unlicensed by default. Add a LICENSE file (for example MIT, A
 
 Created by MoshoodSO. For questions and contributions, open an issue or pull request on GitHub:
 https://github.com/MoshoodSO/Calculator
-``` 
-
-What I did: prepared the README.md content and enclosed it in a file block so you can copy/paste cleanly.  
-Next step for you: paste this into README.md at the repo root, then commit and push. If you want, I can also show the exact git commands to create a branch and open a PR. Which would you prefer?
