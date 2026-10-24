@@ -1,6 +1,6 @@
 # Calculator
 
-A lightweight, modular Java Calculator project providing arithmetic and scientific operations, expression parsing, history, and a simple programmatic API. This repository is organized to separate core logic, CLI/GUI entry points, and tests so the calculator can be used as a library or as a standalone application.
+A lightweight, modular Java Calculator project providing arithmetic and scientific operations, expression parsing, history, and a simple programmatic API. This repository is organized to separate core calculation logic from the CLI and tests for easier maintenance and extension.
 
 ## Table of Contents
 
@@ -30,35 +30,22 @@ A lightweight, modular Java Calculator project providing arithmetic and scientif
 
 ## Repository structure
 
-Note: update the tree below if your package or folder names differ.
-
-- README.md
-- LICENSE
-- build.gradle / pom.xml                # Gradle or Maven build file (one of these)
-- src/
-  - main/
-    - java/
-      - com/moshood/calculator/
-        - App.java                      # CLI / main application entry (optional)
-        - Calculator.java               # Core calculator facade (API)
-        - Parser.java                   # Expression parser / evaluator
-        - operations/
-          - Operation.java              # Operation interface
-          - BasicOperations.java        # +, -, *, /
-          - ScientificOperations.java   # sin, cos, pow, sqrt, ...
-        - history/
-          - HistoryManager.java         # store/list previous expressions/results
-        - util/
-          - BigDecimalUtils.java        # helpers for precision & rounding
-    - resources/                       # optional resources (localization, configs)
-  - test/
-    - java/
-      - com/moshood/calculator/
-        - CalculatorTest.java
-        - ParserTest.java
-- docs/                                 # optional docs and sample expressions
-- examples/
-  - cli-example.sh                       # shell script showing CLI usage
+| Path | Purpose |
+| --- | --- |
+| `README.md` | Project overview, setup instructions, and usage examples |
+| `LICENSE` | License file for the project |
+| `build.gradle` / `pom.xml` | Build configuration for Gradle or Maven |
+| `src/main/java/com/moshood/calculator/` | Main Java source package |
+| `src/main/java/com/moshood/calculator/App.java` | CLI entry point and shell runner |
+| `src/main/java/com/moshood/calculator/Calculator.java` | Core calculator API facade |
+| `src/main/java/com/moshood/calculator/Parser.java` | Expression parsing and evaluation logic |
+| `src/main/java/com/moshood/calculator/operations/` | Arithmetic and scientific operation implementations |
+| `src/main/java/com/moshood/calculator/history/` | History and memory tracking utilities |
+| `src/main/java/com/moshood/calculator/util/` | Precision and helper utility classes |
+| `src/main/resources/` | Optional runtime resources, configs, or localization |
+| `src/test/java/com/moshood/calculator/` | Unit tests for calculator behavior and parser rules |
+| `docs/` | Optional documentation and example expressions |
+| `examples/` | Sample scripts and usage examples |
 
 ## Requirements
 
