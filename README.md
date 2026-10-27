@@ -2,6 +2,9 @@
 
 A lightweight, modular Java Calculator project providing arithmetic and scientific operations, expression parsing, history, and a simple programmatic API. This repository is organized to separate core calculation logic from the CLI and tests for easier maintenance and extension.
 
+# Demo
+
+
 ## Table of Contents
 
 - [Features](#features)
