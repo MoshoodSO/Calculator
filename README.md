@@ -4,7 +4,7 @@ A lightweight, modular Java Calculator project providing arithmetic and scientif
 
 # Demo
 | Default Screen | Example | Result |
-| --------------------------------------------------------- | --------------------------------------------------------- |
+| --------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------- |
 | ![Calc1](https://github.com/MoshoodSO/Calculator/blob/master/images/Calculator1.jpg) | ![Calc2](https://github.com/MoshoodSO/Calculator/blob/master/images/Calculator2.jpg) | ![Calc3](https://github.com/MoshoodSO/Calculator/blob/master/images/Calculator3.jpg) |
 
 ## Table of Contents
